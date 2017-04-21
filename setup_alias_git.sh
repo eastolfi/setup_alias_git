@@ -1,5 +1,5 @@
 #!/bin/bash
-git config --local --rename-section alias aliasOld
+git config --local --rename-section alias 'alias-old'
 
 git config --local alias.lol 'log --oneline --decorate --graph --abbrev-commit --all'
 git config --local alias.st 'status'
