@@ -16,6 +16,8 @@ esac
 
 # Rename old aliases
 eval "git config $c_type --rename-section alias 'alias-old'"
+eval "git config $c_type --rename-section alias.undo 'alias-old.undo'"
+eval "git config $c_type --rename-section alias.branches 'alias-old.branches'"
 
 # Basics
 eval "git config $c_type alias.st 'status'"
