@@ -1,6 +1,6 @@
 #!/bin/bash
 
-c_type="local"
+c_type="--local"
 
 case $1 in
 	global)
@@ -41,6 +41,10 @@ eval "git config $c_type alias.branches.merged 'branch --merged'"
 # Utils
 eval "git config $c_type alias.pullr 'pull --rebase'"
 eval "git config $c_type alias.visual '!gitk'"
+
+# patching
+v_patch_stash="git config $c_type alias.patch.stash '!f() { git show -p stash@{\"\$1\"} > \"\$2.patch\"; }; f'"
+eval "$v_patch_stash"
 
 
 echo "The aliases has been included in '$c_type' config. All the old aliases are new within 'alias-old'"
