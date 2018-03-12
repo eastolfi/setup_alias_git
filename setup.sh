@@ -41,6 +41,7 @@ eval "git config $c_type alias.branches.merged 'branch --merged'"
 # Utils
 eval "git config $c_type alias.pullr 'pull --rebase'"
 eval "git config $c_type alias.visual '!gitk'"
+eval "git config $c_type alias.fst '!git fetch && git status'"
 
 # patching
 v_patch_stash="git config $c_type alias.patch.stash '!f() { git show -p stash@{\"\$1\"} > \"\$2.patch\"; }; f'"
