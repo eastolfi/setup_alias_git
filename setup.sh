@@ -37,6 +37,7 @@ eval "git config $c_type alias.undo.hard 'reset --hard HEAD^'"
 # Branches
 eval "git config $c_type alias.branches.unmerged 'branch --no-merged'"
 eval "git config $c_type alias.branches.merged 'branch --merged'"
+eval "git config $c_type alias.branches.prune 'remote prune origin'"
 
 # Utils
 eval "git config $c_type alias.pullr 'pull --rebase'"
