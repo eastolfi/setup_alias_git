@@ -49,7 +49,7 @@ eval "git config $c_type alias.conf 'config -l'"
 
 # Initialization
 # Use it as git init.user "Username" "email"
-eval "git config $c_type alias.init.user '!f() { git config --local user.name \$1 && git config --local user.email \"\$2\"; }; f'"
+eval "git config $c_type alias.init.user '!f() { git config --local user.name \"\$1\" && git config --local user.email \"\$2\"; }; f'"
 
 # patching
 v_patch_stash="git config $c_type alias.patch.stash '!f() { git show -p stash@{\"\$1\"} > \"\$2.patch\"; }; f'"
