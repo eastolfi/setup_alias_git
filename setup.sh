@@ -45,7 +45,7 @@ eval "git config $c_type alias.branches.prune 'remote prune origin'"
 eval "git config $c_type alias.pullr 'pull --rebase'"
 eval "git config $c_type alias.visual '!gitk'"
 eval "git config $c_type alias.fst '!git fetch && git status'"
-eval "git config $c_type alias.conf 'git config -l"
+eval "git config $c_type alias.conf 'git config -l'"
 
 # Initialization
 # Use it as git init.user "Username" "email"
