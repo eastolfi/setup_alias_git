@@ -4,16 +4,16 @@ Run in linux (or git bash) command line:
 
 For global aliases:
 ```shell
-curl https://raw.githubusercontent.com/eastolfi/setup_alias_git/master/setup.sh | bash -s global
+bash -c "$(curl https://raw.githubusercontent.com/eastolfi/setup_alias_git/master/setup.sh)" -s global
 ```
 
 For system aliases:
 ```shell
-curl https://raw.githubusercontent.com/eastolfi/setup_alias_git/master/setup.sh | bash -s system
+bash -c "$(curl https://raw.githubusercontent.com/eastolfi/setup_alias_git/master/setup.sh)" -s system
 ```
 For local aliases:
 ```shell
-curl https://raw.githubusercontent.com/eastolfi/setup_alias_git/master/setup.sh | bash -s local
+bash -c "$(curl https://raw.githubusercontent.com/eastolfi/setup_alias_git/master/setup.sh)" -s local
 ```
 
 For setting the user and email
